@@ -7,7 +7,7 @@
           class="avelacnelInput"
           placeholder="Գրել խանութի անունը"
           v-model="inputValue"
-          @keyup.enter="avelacnelXanut"
+          @click.keyuo="avelacnelXanut"
         />
         <button class="avelacnelBtn" @click="avelacnelXanut">Ավելացնել</button>
       </div>
