@@ -1,0 +1,302 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #000;
+}
+.avelacnelXanut {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  gap: 20px;
+  align-items: center;
+}
+.avelacnelBtn {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px;
+  background: green;
+  color: #fff;
+  border-radius: 10px;
+}
+.avelacnelInput {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: inset 0 0 5px green;
+}
+.contentList {
+  display: flex;
+  flex-direction: column;
+}
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.xanutiAnun {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  word-wrap: break-word;
+  padding: 10px;
+  border: 1px solid #000;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  text-transform: uppercase;
+}
+.apranqneriList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.apranqneriListItem {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  border: 1px solid #000;
+  border-top: 0;
+  border-left: 0;
+}
+.apranqiText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+}
+.apranqiAnun {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 500;
+  word-wrap: break-word;
+  text-align: center;
+  width: 90%;
+  border-right: 1px solid #000;
+  height: 100%;
+  padding: 5px;
+  text-transform: capitalize;
+}
+.apranqiQanak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.apranqiAvelPakas {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+.apranqiBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter';
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border: none;
+  color: #fff;
+  width: 50%;
+  cursor: pointer;
+}
+.plus {
+  background: green;
+}
+.minus {
+  background: red;
+}
+.cuycTal {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px;
+  border-left: 1px solid #000;
+}
+.heracnelBtn,
+.cuycTalBtn {
+  display: inline-block;
+  font-family: 'Inter';
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.heracnelBtn {
+  background: red;
+}
+.cuycTalBtn {
+  background: green;
+}
+
+/* endahnur */
+.endhanurQanak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.endhanurQanakInner {
+  width: 90%;
+  height: 90%;
+  background: #fff;
+  box-shadow: 0 0 10px #fff;
+  border-radius: 20px;
+}
+.ovAuto {
+  overflow: auto;
+}
+.endhanurQanakiList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.endhanurQanakiListItem {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0;
+  border-bottom: 1px solid #000;
+}
+.endhanurQanakiListItem:last-child {
+  border-bottom: none;
+}
+.endhanurQanakiListItemXanutiAnun {
+  border-right: 1px solid #000;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: 'Inter';
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.endhanurApranqneriList {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+.endhanurApranqneriListItem {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+.endhanurApranqneriListItem:last-child {
+  border-bottom: none;
+}
+.endhanurApranqneriListItemQanak {
+  color: red;
+  font-size: 25px;
+  font-family: 'Inter';
+  font-weight: 700;
+}
+.endhanurApranqneriListItemAnun {
+  font-weight: bold;
+  font-size: 20px;
+}
+.noProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.closeBtn {
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    flex-direction: column-reverse;
+    height: 150px;
+  }
+  .avelacnelXanut {
+    padding: 20px;
+    height: 50%;
+    width: 100%;
+  }
+  .cuycTal {
+    width: 100%;
+    height: 50%;
+    gap: 5px;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #000;
+  }
+  .apranqneriList {
+    overflow: auto;
+  }
+  .apranqneriListItem {
+    min-width: 200px;
+  }
+  .endhanurQanakiListItemXanutiAnun {
+    width: 50%;
+    letter-spacing: 0;
+    font-size: 16px;
+    padding: 5px;
+  }
+}
