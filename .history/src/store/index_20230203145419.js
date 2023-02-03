@@ -36,13 +36,11 @@ const store = new Vuex.Store({
     },
     AVELACNEL(state, payload) {
       state.xanutner[payload.xanutiAnun][payload.apranqiHamar].qanak += 1;
-      localStorage.setItem('xanutner', JSON.stringify(state.xanutner));
     },
     PAKASACNEL(state, payload) {
       let qanak = state.xanutner[payload.xanutiAnun][payload.apranqiHamar].qanak;
       if (qanak >= 1) {
-        state.xanutner[payload.xanutiAnun][payload.apranqiHamar].qanak -= 1;
-        localStorage.setItem('xanutner', JSON.stringify(state.xanutner));
+        state.xanutner = {state.xanutner[payload.xanutiAnun][payload.apranqiHamar].qanak -= 1};
       }
     },
     INITIAL(state) {
